@@ -23,11 +23,11 @@ largoContrasenya.addEventListener('blur',(e)=>{
     
     let campo = e.target;
     
-    if(largoContrasenya.value > 5 && largoContrasenya.value < 21){
+    if(parseInt(largoContrasenya.value) > 5 && parseInt(largoContrasenya.value) < 21){
 
-        let borrarSpan = document.querySelector("span");
-        if (borrarSpan){
-            borrarSpan.remove();
+        let etiquetaSpan = document.querySelector("span");
+        if (etiquetaSpan){
+            etiquetaSpan.remove();
             campo.classList.remove("invalid");
         }
         //crearContraseña();
@@ -55,9 +55,12 @@ function crearEtiquetas(posicionHijo, posicionPadre, posicion, elementoHtml, cla
     posicion.nextElementSibling.innerText = texto;
 }
 
-let borrarParrafo = document.getElementsByTagName("p");
 
 function eliminarExcesoParrafo (){
+
+    let borrarParrafo = document.getElementsByTagName("p");
+
+
     if (borrarParrafo){
         for(let i= 2; i < borrarParrafo.length; i++){
             
@@ -67,18 +70,18 @@ function eliminarExcesoParrafo (){
 }
 
 function ComprobarNumero(){
-    let esCorrecto = false;
+    let correcto = false;
     
     if(largoContrasenya.value > 5 && largoContrasenya.value < 21){
          
-        esCorrecto = true;
+        correcto = true;
     }else{
        
        
-        esCorrecto = false;
+        correcto = false;
         
     }
-    return esCorrecto;
+    return correcto;
     
 }
 
