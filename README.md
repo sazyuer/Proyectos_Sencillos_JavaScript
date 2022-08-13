@@ -1,4 +1,4 @@
-# Proyectos_Sencillos_JavaScript
+# Proyectos Sencillos JavaScript
 Proyectos sencillos hechos en HTML, CSS y JavaScript.</br>
 <h2>Primer proyecto es un reloj simple.</h2></br>
 
