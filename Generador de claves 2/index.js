@@ -30,22 +30,18 @@ largoContrasenya.addEventListener('blur',(e)=>{
             etiquetaSpan.remove();
             campo.classList.remove("invalid");
         }
-        //crearContraseña();
-
-        
+        //crearContraseña();       
     }else{
         
         crearEtiquetas(posicionHijo, parrafo, campo, "span", "error", "Error, debe ser un número entre 6 y 20");
-        campo.classList.add("invalid");
-        
-               
-    }
-   
-    
+        campo.classList.add("invalid")
+    }    
 } );
 
 /*
-funcion para crear nuevas etiquetas html (posicionHijo)antes del cierre de la etiqueta html especificada(posicion). Una vez creada una etiqueta html hay que añadirla al DOM y para ello esta la variable "posicionPadre". Tambien añade el nombre que se quiera a la "class" y el texto que quieres que salga.
+funcion para crear nuevas etiquetas html (posicionHijo)antes del cierre de la etiqueta html especificada(posicion). 
+Una vez creada una etiqueta html hay que añadirla al DOM y para ello esta la variable "posicionPadre". 
+Tambien añade el nombre que se quiera a la "class" y el texto que quieres que salga.
  */
 function crearEtiquetas(posicionHijo, posicionPadre, posicion, elementoHtml, clase, texto){
         
